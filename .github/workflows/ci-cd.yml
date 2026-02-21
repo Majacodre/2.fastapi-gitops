@@ -68,10 +68,10 @@ jobs:
 
       - name: Build Docker Image
         run: |
-          docker build -t ghcr.io/${{ github.repository | lower}}/fastapi-gitops:latest .
+          docker build -t ghcr.io/majacodre/2.fastapi-gitops/fastapi-gitops:latest .
 
       - name: Push Docker Image
         run: |
-          docker push ghcr.io/${{ github.repository | lower }}/fastapi-gitops:latest
+          docker push ghcr.io/majacodre/2.fastapi-gitops/fastapi-gitops:latest
 
 
